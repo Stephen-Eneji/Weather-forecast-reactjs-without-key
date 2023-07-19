@@ -1,38 +1,92 @@
-.App {
+body {
+  background-color: rgb(237, 233, 233);
+}
+
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #45a049;
+  --border-color: #ccc;
+  --card-background: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --font-size-base: 16px;
+}
+
+.weather-dashboard {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.api-key-input {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.api-key-input input {
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: var(--primary-color);
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: var(--secondary-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-details {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 5px var(--shadow-color);
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-condition {
+  display: flex;
+  align-items: center;
+}
+
+.weather-condition img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.temperature {
+  font-size: var(--font-size-base);
 }

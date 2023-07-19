@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+THIS PROJECT IS A TEMPLATE WITHOUT THE API KEY FOR A WEATHER FORECAST DASHBOARD MADE WITH REACTJS/AXIOS/JSX & STYLED DYNAMICALLY WITH CSS
+#stephen-eneji #heiseneji
+
+
+
+ Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
